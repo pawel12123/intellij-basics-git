@@ -1,7 +1,7 @@
 public class Service {
 
     private final Integer cost;
-    private final Person person = new Person("Adam");
+    private final Person person = new Person("Adam", 54);
 
     public Service(Integer cost) {
         this.cost = cost;
@@ -19,7 +19,7 @@ public class Service {
     public String toString() {
         return "Service{" +
                 "cost=" + cost +
-                ", person=" + person.getName() +
+                ", person=" + person.getName() + " | " + person.getAge() +
                 '}';
     }
 }
